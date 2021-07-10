@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body,
+header,
+#intro {
+  height: 100vh;
+}
+
+#intro {
+  background: url("") no-repeat top center fixed;
+  background-size: cover;
+}
+
+.navbar {
+  box-shadow: none;
+}
+
+.navbar #button {
+  font-size: 16px;
+}
+
+.navbar #button:hover {
+  background-color: deeppink;
+  color: pink;
+}
+
+.mask {
+  background-color: #ff4e00;
+  background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+}
+
+.mask .container-section .container-introduction h1 {
+  font-weight: 800;
+  font-size: 58px;
+  font-family: fantasy;
+  color: white;
+}
+
+.mask .container-section .container-introduction h1 span {
+  font-weight: 800;
+  font-size: 58px;
+  font-family: fantasy;
+  color: #fdc763;
+}
+
+.mask .container-section .container-introduction .contract-address {
+  color: black;
+  font-weight: 800;
+}
+
+.mask .container-section .container-introduction .address {
+  color: black;
+}
+
+.mask .container-section .container-introduction .header-text {
+  color: black;
+  font-weight: bolder;
+  font-size: 28px;
+}
+
+.mask .container-section .container-introduction .container-button .btn {
+  text-transform: uppercase;
+  background-color: silver;
+  color: black;
+  text-transform: capitalize;
+  padding: 12px;
+  font-size: 13px;
+}
+
+.mask .container-section .container-introduction .container-button .btn:hover {
+  background-color: #ec9f05;
+  color: black;
+}
+
+@media (max-width: 767px) {
+  .mask {
+    margin-top: 32px !important;
+  }
+  .mask h1 {
+    font-size: 45px !important;
+  }
+  .mask h2 {
+    font-size: 54px !important;
+  }
+}
+
+.top-nav-collapse {
+  background-color: #ec9f05;
+}
+
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background-color: #ec9f05;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background-color: #ec9f05;
+  }
+}
+
+main {
+  background-color: #eee;
+}
+
+main .about .subtitle {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+
+main .about .text {
+  color: lightslategray;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+main .about h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: black;
+}
+
+main .about i {
+  color: #ec9f05;
+}
+
+main .about .about-button a {
+  color: white;
+  background-color: #ec9f05;
+}
+
+main .roadmap-points {
+  color: #ec9f05;
+}
+
+main .timeline {
+  border-left: 3px solid black;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  margin: 0 auto;
+  letter-spacing: 0.2px;
+  position: relative;
+  line-height: 1.4em;
+  font-size: 1.03em;
+  padding: 50px;
+  list-style: none;
+  text-align: left;
+  max-width: 40%;
+}
+
+@media (max-width: 767px) {
+  main .timeline {
+    max-width: 98%;
+    padding: 25px;
+  }
+}
+
+main .timeline h1 {
+  font-weight: 300;
+  font-size: 1.4em;
+}
+
+main .timeline h2,
+main .timeline h3 {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+main .card-title {
+  color: black;
+  font-weight: bold;
+}
+
+main .timeline .event {
+  border-bottom: 1px dashed #e8ebf1;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  position: relative;
+  color: black;
+}
+
+@media (max-width: 767px) {
+  main .timeline .event {
+    padding-top: 30px;
+  }
+}
+
+main .timeline .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+main .timeline .event:before,
+main .timeline .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+main .timeline .event:before {
+  left: -207px;
+  content: attr(data-date);
+  text-align: right;
+  font-weight: 100;
+  font-size: 0.9em;
+  min-width: 120px;
+}
+
+@media (max-width: 767px) {
+  main .timeline .event:before {
+    left: 0px;
+    text-align: left;
+  }
+}
+
+main .timeline .event:after {
+  box-shadow: 0 0 0 3px black;
+  left: -55.8px;
+  background: #fff;
+  border-radius: 50%;
+  height: 9px;
+  width: 9px;
+  content: "";
+  top: 5px;
+}
+
+@media (max-width: 767px) {
+  main .timeline .event:after {
+    left: -31.8px;
+  }
+}
+
+main .rtl .timeline {
+  border-left: 0;
+  text-align: right;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border-right: 3px solid #727cf5;
+}
+
+main .rtl .timeline .event::before {
+  left: 0;
+  right: -170px;
+}
+
+main .rtl .timeline .event::after {
+  left: 0;
+  right: -55.8px;
+}
+
+.pie-chart h1 {
+  color: black;
+  font-weight: bold;
+}
+
+.pie-chart .row i {
+  color: #ec9f05;
+}
+
+#myChart {
+  width: 500px;
+  max-width: 1000px;
+}
+
+footer {
+  color: white;
+}
+
+footer .container-footer .subtitle {
+  font-weight: bold;
+  font-size: 10px;
+  color: black;
+}
+
+footer .container-footer .text {
+  color: white;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+footer .container-footer h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: saddlebrown;
+}
+
+footer .container-footer .form-control {
+  background-color: white;
+  color: black;
+  border-radius: 50px;
+}
+
+footer .container-footer .footer-button .btn {
+  background-color: silver;
+  color: black;
+}
+/*# sourceMappingURL=app.css.map */
